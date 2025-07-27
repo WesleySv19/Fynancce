@@ -1,0 +1,17 @@
+# node
+node_modules
+dist/
+
+# enviroment
+.env
+
+# prisma
+prisma/dev.db
+prisma/dev.db-journal
+
+# vs code and so
+.vscode/
+.DS_Store
+
+# Logs
+*.log
