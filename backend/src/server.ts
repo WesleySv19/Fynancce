@@ -1,6 +1,8 @@
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
+const PORT = process.env.PORT || 3333;
+
 
 dotenv.config();
 
@@ -13,8 +15,6 @@ app.get("/", (req, res) => {
     res.send("Hello World");
 })
 
-const PORT = process.env.PORT || 3333;
-
 app.listen(PORT, () => {
-    console.log(`Servidor rodando na porta ${PORT}`);
+    console.log(`Server running on the port: ${PORT} in ${process.env.PORT}`);
 })
